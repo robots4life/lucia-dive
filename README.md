@@ -47,3 +47,19 @@ https://devilbox.readthedocs.io/en/latest/configuration-files/env-file.html#pgsq
 https://devilbox.readthedocs.io/en/latest/configuration-files/env-file.html#pgsql-root-password
 
 `PGSQL_ROOT_PASSWORD` : `empty`
+
+https://www.prisma.io/docs/concepts/database-connectors/postgresql#connection-details
+
+`postgresql://USER:PASSWORD@HOST:PORT/DATABASE`
+
+enter devilbox shell
+
+`/media/user/d/WWW/devilbox/shell`
+
+enter postgresql via terminal
+
+`psql -h pgsql -U postgres`
+
+create database lucia_dive
+
+`create database lucia_dive;`
