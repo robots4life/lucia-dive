@@ -66,4 +66,4 @@ create database lucia_dive
 
 `postgres=# \l`
 
-<img src="https://github.com/robots4life/lucia-dive/docs/Screenshot_20230516_191822.png">
+<img src="https://github.com/robots4life/lucia-dive/blob/master/docs/Screenshot_20230516_191822.png">
