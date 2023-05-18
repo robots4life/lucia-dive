@@ -70,6 +70,10 @@ list postgresql databases available, lucia_dive should be listed
 
 <img src="https://github.com/robots4life/lucia-dive/blob/master/docs/Screenshot_20230516_191822.png">
 
+connection string
+
+`DATABASE_URL="postgresql://postgres:@pgsql:5432/lucia_dive"`
+
 7.
 
 ## Creating the database schema
