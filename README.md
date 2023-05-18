@@ -148,3 +148,9 @@ devilbox@php-8.1.14 in /shared/httpd/lucia-dive $
 ```
 
 <img src="/docs/Screenshot_20230518_123002.png">
+
+9.
+
+## Install Prisma Client
+
+`npm install @prisma/client --verbose`
