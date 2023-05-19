@@ -154,3 +154,7 @@ devilbox@php-8.1.14 in /shared/httpd/lucia-dive $
 ## Install Prisma Client
 
 `npm install @prisma/client --verbose`
+
+manually re-generate client
+
+`npx prisma generate`
