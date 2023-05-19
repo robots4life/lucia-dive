@@ -158,3 +158,24 @@ devilbox@php-8.1.14 in /shared/httpd/lucia-dive $
 manually re-generate client
 
 `npx prisma generate`
+
+```shell
+devilbox@php-8.1.14 in /shared/httpd/lucia-dive $ npx prisma generate
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (4.14.1 | library) to ./node_modules/@prisma/client in 104ms
+You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+```
+
+```js
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+```
+
+```shell
+warn Versions of prisma@4.14.0 and @prisma/client@4.14.1 don't match.
+This might lead to unexpected behavior.
+Please make sure they have the same version.
+devilbox@php-8.1.14 in /shared/httpd/lucia-dive $
+```
