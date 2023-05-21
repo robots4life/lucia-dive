@@ -179,3 +179,60 @@ This might lead to unexpected behavior.
 Please make sure they have the same version.
 devilbox@php-8.1.14 in /shared/httpd/lucia-dive $
 ```
+
+after manually changing `package.json` Prisma version from
+
+`"prisma": "^4.14.0",` to `"prisma": "^4.14.1",`
+
+and running
+
+`npx prisma migrate`
+
+again this new warning comes up
+
+```shell
+devilbox@php-8.1.14 in /shared/httpd/lucia-dive $ npx prisma generate
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (4.14.1 | library) to ./node_modules/@prisma/client in 69ms
+You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+```
+
+```js
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+```
+
+```shell
+warn Versions of prisma@4.14.0 and @prisma/client@4.14.1 don't match.
+This might lead to unexpected behavior.
+Please make sure they have the same version.
+┌─────────────────────────────────────────────────────────┐
+│  Update available 4.14.0 -> 4.14.1                      │
+│  Run the following to update                            │
+│    npm i --save-dev prisma@latest                       │
+│    npm i @prisma/client@latest                          │
+└─────────────────────────────────────────────────────────┘
+devilbox@php-8.1.14 in /shared/httpd/lucia-dive $
+```
+
+`npm install --save-dev prisma@latest --verbose`
+
+`npm install @prisma/client@latest --verbose`
+
+`npx prisma genrate` is now ok
+
+```shell
+devilbox@php-8.1.14 in /shared/httpd/lucia-dive $ npx prisma generate
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+
+✔ Generated Prisma Client (4.14.1 | library) to ./node_modules/@prisma/client in 67ms
+You can now start using Prisma Client in your code. Reference: https://pris.ly/d/client
+```
+
+```js
+import { PrismaClient } from '@prisma/client';
+const prisma = new PrismaClient();
+```
